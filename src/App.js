@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/app.css'
+import Insert              from './components/insert/index.js'
+import Panel               from './components/panel/index.js'
+import Table               from './components/table/index.js'
+import {SelectionProvider} from './contexts/selectionContext.js'
+import {ThemeProvider}     from './contexts/themeContext.js'
+import {TodosProvider}     from './contexts/todosContext.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	return (
+		<ThemeProvider>
+			<TodosProvider>
+				<SelectionProvider>
+					<div className={'app'}>
+						<Panel title={'Insert Row'}>
+							<Insert/>
+						</Panel>
+						<Panel style={{flex: 1}}>
+							<Table/>
+						</Panel>
+					</div>
+				</SelectionProvider>
+			</TodosProvider>
+		</ThemeProvider>
+	)
 }
 
-export default App;
+export default App

@@ -1,0 +1,38 @@
+.table {
+    color: var(--color-text);
+    padding: 5px;
+    font-size: 14px;
+}
+
+.table > thead {
+    background-color: var(--color-thead);
+}
+
+.table tr {
+    width: 100%;
+    flex: 1;
+}
+
+.table th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table input {
+    font-size: 14px;
+    color: var(--color-text);
+    display: block;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.table tr.selected {
+    background-color: var(--color-selected);
+}
+
+.table select {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    color: var(--color-text);
+}

@@ -1,0 +1,19 @@
+[data-theme='dark'] {
+    --color-bg: rgb(50, 50, 50);
+    --color-border: rgb(80, 80, 80);
+    --color-text: rgb(210, 210, 210);
+    --color-button: rgb(90, 90, 90);
+    --color-thead: rgb(90, 90, 90);
+    --color-selected: rgb(75, 75, 75);
+    --color-accent: rgb(33, 115, 70)
+}
+
+[data-theme='light'] {
+    --color-bg: rgb(255, 255, 255);
+    --color-border: rgb(80, 80, 80);
+    --color-text: rgb(30, 30, 30);
+    --color-button: rgb(200, 200, 200);
+    --color-thead: rgb(200, 200, 200);
+    --color-selected: rgb(210, 210, 210);
+    --color-accent: rgb(33, 115, 70)
+}

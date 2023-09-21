@@ -39,3 +39,7 @@
     border: none;
     color: var(--color-text);
 }
+
+.table select option {
+    background: var(--color-bg);
+}

@@ -38,6 +38,11 @@
     display: none;
 }
 
+.insert select {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
 .button {
     background-color: var(--color-button);
     color: var(--color-text);

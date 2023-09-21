@@ -46,7 +46,9 @@ const Insert = () => {
 
 		const nextId = Number(lastId) + 1
 		setLastId(nextId)
+
 		localStorage.setItem('lastId', nextId.toString())
+
 		dispatchTodo({
 			type: 'added',
 			id: nextId,
@@ -56,10 +58,10 @@ const Insert = () => {
 			employment
 		})
 
-		// setName('')
-		// setAge(0)
-		// setSubscription('Subscribed')
-		// setEmployment(false)
+		setName('')
+		setAge(0)
+		setSubscription('Subscribed')
+		setEmployment(false)
 	}
 
 	const onDelete = () => {

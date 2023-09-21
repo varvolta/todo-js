@@ -44,10 +44,9 @@ const Insert = () => {
 		if (age.length === 0) return alert('Enter an age')
 		if (age === 0) return alert('Age cannot be 0')
 
-
-		const nextId = lastId + 1
+		const nextId = Number(lastId) + 1
 		setLastId(nextId)
-		localStorage.setItem('lastId', nextId)
+		localStorage.setItem('lastId', nextId.toString())
 		dispatchTodo({
 			type: 'added',
 			id: nextId,
@@ -56,6 +55,11 @@ const Insert = () => {
 			subscription,
 			employment
 		})
+
+		// setName('')
+		// setAge(0)
+		// setSubscription('Subscribed')
+		// setEmployment(false)
 	}
 
 	const onDelete = () => {
